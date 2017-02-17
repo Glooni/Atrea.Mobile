@@ -8,25 +8,25 @@ using Xamarin.Forms;
 
 namespace Atrea.Mobile.Pages.Login
 {
-    public partial class ForgotPage : ContentPage
+    public partial class ModalPage : ContentPage
     {
-        public ForgotPage()
+        public ModalPage()
         {
-            Title = "Forgotten Password page";
+            Title = "Modal Page";
             Button backButton = new Button
             {
                 Text = "Back",
                 HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-                
+                VerticalOptions = LayoutOptions.Center
             };
+
             backButton.Clicked += BackButton_Clicked;
             Content = backButton;
         }
 
         private async void BackButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
     }
 }
