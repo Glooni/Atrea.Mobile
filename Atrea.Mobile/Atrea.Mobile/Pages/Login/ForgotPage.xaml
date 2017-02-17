@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Atrea.Mobile.Pages.Login.ForgotPage">
+  <StackLayout Spacing="8" BackgroundColor="{StaticResource Key=primaryBackground}">
+    <Label Style="{StaticResource primaryLabel}" Text="Forgotten password?" HorizontalOptions="Center" />
+  </StackLayout>
+</ContentPage>
