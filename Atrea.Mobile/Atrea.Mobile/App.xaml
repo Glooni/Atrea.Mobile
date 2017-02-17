@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="Atrea.Mobile.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<Color x:Key="defaultBackground">#ffffff</Color>
+			<Color x:Key="primaryBackground">#2fa2da</Color>
+			<Color x:Key="secondaryBackground">#e4e4e4</Color>
+			<Color x:Key="accentBackground">#4a4a4a</Color>
+			<Color x:Key="successBackground">#6fbf3f</Color>
+			<Color x:Key="infoBackground">#d6edf8</Color>
+			<Color x:Key="dangerBackground">#ff656b</Color>
+			<Color x:Key="primaryAccentBackground">#445c67</Color>
+
+			<Color x:Key="defaultText">#676767</Color>
+			<Color x:Key="primaryText">#ffffff</Color>
+			<Color x:Key="secondaryText">#bbbbbb</Color>
+			<Color x:Key="successText">#6fbf3f</Color>
+			<Color x:Key="dangerText">#ff656b</Color>
+
+			<Style x:Key="primaryLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource Key=primaryText}" />
+				<Setter Property="FontSize" Value="Large" />
+			</Style>
+			
+			<Style x:Key="primaryEntry" TargetType="Entry">
+				<Setter Property="TextColor" Value="{StaticResource Key=defaultText}" />
+				<Setter Property="BackgroundColor" Value="{StaticResource Key=defaultBackground}" />
+				<Setter Property="FontSize" Value="Medium" />
+			</Style>
+
+			<Style x:Key="primaryButton" TargetType="Button">
+				<Setter Property="TextColor" Value="{StaticResource Key=primaryText}" />
+				<Setter Property="FontSize" Value="Medium" />
+				<Setter Property="BorderWidth" Value="1" />
+			</Style>
+
+			<Style x:Key="primaryLinkButton" TargetType="Button">
+				<Setter Property="TextColor" Value="{StaticResource Key=primaryText}" />
+				<Setter Property="BackgroundColor" Value="Transparent" />
+				<Setter Property="FontSize" Value="Medium" />
+				<Setter Property="BorderWidth" Value="0" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:Atrea.Mobile"
+			 x:Class="Atrea.Mobile.LoginPage">
+	
+	<StackLayout Spacing="8" BackgroundColor="{StaticResource Key=primaryBackground}">
+		<Label Style="{StaticResource primaryLabel}" Text="{local:Translate LOGIN}" HorizontalOptions="Center" />
+		<Entry Style="{StaticResource primaryEntry}" Placeholder="{local:Translate EMAIL_PLACEHOLDER}" HorizontalOptions="FillAndExpand" />
+		<Entry Style="{StaticResource primaryEntry}" Placeholder="{local:Translate PASSWORD_PLACEHOLDER}" IsPassword ="True" HorizontalOptions="FillAndExpand" />
+		<Button Style="{StaticResource primaryButton}" Text="{local:Translate LOGIN}" HorizontalOptions="FillAndExpand" />
+		<Button Style="{StaticResource primaryLinkButton}" Text="{local:Translate FORGOTTEN_PASSWORD}" HorizontalOptions="FillAndExpand" />
+	</StackLayout>
+
+</ContentPage>
